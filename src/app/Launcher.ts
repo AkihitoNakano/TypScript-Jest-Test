@@ -11,4 +11,4 @@ export class Launcher {
   }
 }
 
-new Launcher().launchApp
+new Launcher().launchApp()

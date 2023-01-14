@@ -1,10 +1,10 @@
-import * as Nedb from 'nedb'
+import Nedb from 'nedb'
 import { UserCredentials } from '../Models/ServerModels'
 
 export class UserCredentialsDbAccess {
   private nedb: Nedb
 
-  constructor(nedb = new Nedb('databases/UserCredentials.db')) {
+  constructor(nedb = new Nedb('databases/Users.db')) {
     this.nedb = nedb
     this.nedb.loadDatabase()
   }
